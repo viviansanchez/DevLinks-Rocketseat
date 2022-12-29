@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLinks</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/avatar-darkmode.png"
+          alt="Foto de Vivian Sanchez sorrindo, usando blusa colorida com tons predominantes azuis, e fundo bege."
+        />
+        <p>@viviansanchez</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <div id="links">
+        <ul>
+          <!-- li são placeholders -->
+          <li>
+            <a
+              href="https://viviansanchez.github.io/NLW-Copa-Rocketseat/"
+              target="_blank"
+              >NLW Copa</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://viviansanchez.github.io/NLW-Esports-Rocketseat/"
+              target="_blank"
+              >NLW E-sports</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://explorer-lab-01-rocketseat-delta.vercel.app/"
+              target="_blank"
+              >Explorer Lab 01</a
+            >
+          </li>
+          <!-- <li>
+            <a href="https://github.com/viviansanchez" target="_blank"
+              >Ver meu portfólio</a
+            >
+          </li> -->
+        </ul>
+      </div>
+
+      <div id="social-links">
+        <a href="https://github.com/viviansanchez" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/vivian-sanchez-b9570818b/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://wa.me/5511999394696" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+        <!-- <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a> -->
+      </div>
+
+      <!-- <footer>
+        Feito com ♥ pela
+        <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a>
+      </footer> -->
+    </div>
+
+    <!-- using ionics scripts to use icons from https://ionic.io/ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
