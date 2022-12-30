@@ -35,7 +35,7 @@ body * {
 }
 
 #container {
-  width: 100%;
+  width: 95%;
   max-width: 588px;
   margin: 0 auto;
   padding: 56px 0 24px;
@@ -122,6 +122,7 @@ body * {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   padding: 16px 24px;
 
@@ -141,6 +142,21 @@ body * {
 #links ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
+}
+
+#links ul li a img {
+  /* width: 50%; */
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s, height 2s;
+}
+
+#links ul li a:hover img {
+  height: 12rem;
+  visibility: visible;
+  opacity: 1;
+  margin-top: 16px;
 }
 
 /* social links */
@@ -166,12 +182,6 @@ body * {
   background: var(--highlight-color);
 }
 
-/* footer {
-  padding: 24px 0;
-  text-align: center;
-  font-size: 14px;
-} */
-
 /* media queries */
 @media (min-width:700px) {
   :root {
@@ -180,6 +190,12 @@ body * {
 
   .light {
     --bg-url: url(./assets/bg-desktop-lightmode.jpg);
+  }
+}
+
+@media (max-width: 375px) {
+  #links ul li a:hover img {
+    height: 8.8rem;
   }
 }
 
